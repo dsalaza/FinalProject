@@ -40,6 +40,11 @@ function listRoster (teamID) {
             createPlayerName.innerText = `${element.name_display_first_last}`
             document.querySelector(`#roster`).appendChild(createPlayerName)
 
+            let createPlayerInfo = document.createElement(`p`)
+            createPlayerInfo.classList.add(`playerInfo`)
+            createPlayerInfo.innerText = `postition: ${element.position_txt}, throws: ${element.throws}, bats: ${element.bats}`
+            document.querySelectorAll(`p.playerName`).forEach(element => element.appendChild(createPlayerInfo))
+
         })
         
     })
