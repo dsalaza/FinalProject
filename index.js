@@ -65,7 +65,7 @@ function listRoster (teamID) {
 //clear button removes all playerName elements completely
 
 document.querySelector(`#clearButton`).addEventListener(`click`, () => {
-    let playerName = document.querySelectorAll(`p.playerName`)
+    let playerName = document.querySelectorAll(`.playerContainer`)
     playerName.forEach(element => element.remove())
     
 })
