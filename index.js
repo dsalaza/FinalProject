@@ -42,7 +42,7 @@ function listRoster (teamID) {
 
             let createPlayerInfo = document.createElement(`p`)
             createPlayerInfo.classList.add(`playerInfo`)
-            createPlayerInfo.innerText = `postition: ${element.position_txt}, throws: ${element.throws}, bats: ${element.bats}`
+            createPlayerInfo.innerText = `Postition: ${element.position_txt}, Throws: ${element.throws}, Bats: ${element.bats}`
             document.querySelectorAll(`p.playerName`).forEach(element => element.appendChild(createPlayerInfo))
 
             let createEmptyStar = document.createElement(`p`)
