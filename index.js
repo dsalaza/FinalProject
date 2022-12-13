@@ -95,11 +95,15 @@ function addMouseout() {
 let star = `★`
 let emptyStar = `☆`
 
-let clicked = false
+
 
 function emptyStarEvent() {
+
+    let clicked = false
+
     document.querySelectorAll(`.empty-star`).forEach(element => {
         element.addEventListener(`click`, () => {
+
             if (!clicked) {
                 clicked = true
                 element.innerText = `Mark as Favorite: ${star}`
