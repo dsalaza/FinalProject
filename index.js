@@ -57,3 +57,14 @@ document.querySelector(`#clearButton`).addEventListener(`click`, () => {
     playerName.forEach(element => element.remove())
     
 })
+
+//adds a mouseover effect for the player elements
+
+function addMouseover() {
+
+    document.querySelectorAll(`.playerName`).forEach(element => {
+        element.addEventListener(`mouseover`, () => {
+            element.style.color=`lightblue`
+        })
+    })
+    }
