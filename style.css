@@ -18,6 +18,7 @@ body {
     border-color: white;
     background-color: darkgreen;
     width: 80%;
+    margin: 0 auto;
 }
 
 .playerName {
