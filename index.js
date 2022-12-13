@@ -69,4 +69,14 @@ function addMouseover() {
             element.style.color=`lightblue`
         })
     })
-    }
+}
+
+function addMouseout() {
+
+    document.querySelectorAll(`.playerName`).forEach(element => {
+        element.addEventListener(`mouseout`, () => {
+            element.style.color=`white`
+        })
+    })
+}
+
