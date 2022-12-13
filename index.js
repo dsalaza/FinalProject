@@ -45,6 +45,8 @@ function listRoster (teamID) {
             createPlayerInfo.innerText = `postition: ${element.position_txt}, throws: ${element.throws}, bats: ${element.bats}`
             document.querySelectorAll(`p.playerName`).forEach(element => element.appendChild(createPlayerInfo))
 
+            addMouseover()
+
         })
         
     })
