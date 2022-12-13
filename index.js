@@ -46,7 +46,7 @@ function listRoster (teamID) {
             document.querySelectorAll(`p.playerName`).forEach(element => element.appendChild(createPlayerInfo))
 
             addMouseover()
-
+            addMouseout()
         })
         
     })
