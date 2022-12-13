@@ -20,3 +20,12 @@ body {
     font-size: 22px;
     line-height: 40px;
 }
+
+.empty-star {
+    font-size: 15px;
+
+}
+
+.playerInfo {
+    font-size: 15px;
+}
