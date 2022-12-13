@@ -45,6 +45,11 @@ function listRoster (teamID) {
             createPlayerInfo.innerText = `postition: ${element.position_txt}, throws: ${element.throws}, bats: ${element.bats}`
             document.querySelectorAll(`p.playerName`).forEach(element => element.appendChild(createPlayerInfo))
 
+            let createEmptyStar = document.createElement(`p`)
+            createEmptyStar.classList.add(`empty-star`)
+            createEmptyStar.innerText = `Mark as Favorite: ${emptyStar}`
+            document.querySelectorAll(`p.playerName`).forEach(element => element.appendChild(createEmptyStar))
+
             addMouseover()
             addMouseout()
         })
@@ -84,3 +89,4 @@ function addMouseout() {
 
 let star = `★`
 let emptyStar = `☆`
+
