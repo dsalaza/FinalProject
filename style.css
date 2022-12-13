@@ -13,13 +13,17 @@ body {
     background-color: green;
 }
 
-.playerName {
-    border-style: groove;
+.playerContainer {
+    border-style: solid;
+    border-color: white;
     background-color: darkgreen;
+}
+
+.playerName {
     color: white;
     font-size: 22px;
-    line-height: 40px;
 }
+
 
 .empty-star {
     font-size: 15px;
@@ -29,4 +33,5 @@ body {
 
 .playerInfo {
     font-size: 15px;
+   
 }
