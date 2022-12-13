@@ -35,7 +35,10 @@ function listRoster (teamID) {
         let rosterArray = data.roster_40.queryResults.row
         rosterArray.forEach(element => {
 
-            console.log(element)
+            let createPlayerName = document.createElement(`p`)
+            createPlayerName.classList.add(`playerName`)
+            createPlayerName.innerText = `${element.name_display_first_last}`
+            document.querySelector(`#roster`).appendChild(createPlayerName)
 
         })
         
