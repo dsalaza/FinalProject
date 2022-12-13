@@ -1,0 +1,14 @@
+#title {
+    color: white;
+
+}
+
+#searchBar {
+    width: 350px;
+}
+
+body {
+    font-family: "Lucida Console", "Courier New", monospace;
+    text-align: center;
+    background-color: green;
+}
