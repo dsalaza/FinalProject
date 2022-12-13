@@ -24,3 +24,20 @@ function listTeams (team) {
         })
     })
 }
+
+//finds roster by teamID and renders playercard
+
+function listRoster (teamID) {
+
+    fetch(`http://lookup-service-prod.mlb.com/json/named.roster_40.bam?team_id=${teamID}`)
+    .then(resp => resp.json())
+    .then(data => { 
+        let rosterArray = data.roster_40.queryResults.row
+        rosterArray.forEach(element => {
+
+            console.log(element)
+
+        })
+        
+    })
+}
