@@ -52,6 +52,7 @@ function listRoster (teamID) {
 
             addMouseover()
             addMouseout()
+            emptyStarEvent()
         })
         
     })
@@ -89,4 +90,24 @@ function addMouseout() {
 
 let star = `★`
 let emptyStar = `☆`
+
+let clicked = false
+
+function emptyStarEvent() {
+    document.querySelectorAll(`.empty-star`).forEach(element => {
+        element.addEventListener(`click`, () => {
+            if (!clicked) {
+                clicked = true
+                element.innerText = `Mark as Favorite: ${star}`
+                element.style.color = `yellow`
+            }
+            else {
+                clicked = false
+                element.innerText = `Mark as Favorite: ${emptyStar}`
+                element.style.color = `white`
+            }
+            }
+        )
+    })
+}
 
