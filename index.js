@@ -80,3 +80,7 @@ function addMouseout() {
     })
 }
 
+//adds a favorite functionality
+
+let star = `★`
+let emptyStar = `☆`
