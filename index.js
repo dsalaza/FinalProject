@@ -46,7 +46,7 @@ function listRoster (teamID) {
 
             let createPlayerInfo = document.createElement(`p`)
             createPlayerInfo.classList.add(`playerInfo`)
-            createPlayerInfo.innerText = `Postition: ${element.position_txt}, Throws: ${element.throws}, Bats: ${element.bats}`
+            createPlayerInfo.innerText = `Postition: ${element.position_txt}, Throws: ${element.throws}, Bats: ${element.bats}, Height: ${element.height_feet}'${element.height_inches}", Weight: ${element.weight}`
             document.querySelectorAll(`p.playerName`).forEach(element => element.appendChild(createPlayerInfo))
 
             let createEmptyStar = document.createElement(`p`)
@@ -95,8 +95,6 @@ function addMouseout() {
 let star = `★`
 let emptyStar = `☆`
 
-
-
 function emptyStarEvent() {
 
     let clicked = false
@@ -117,5 +115,6 @@ function emptyStarEvent() {
             }
         )
     })
-}
 
+
+}
