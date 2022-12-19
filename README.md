@@ -6,6 +6,8 @@ Roster Finder is a program that allows you to input the name of a Major League B
 
 To use Roster Finder, simply enter the name of the team you wish to find into the search bar! Note: use only the name of the team, do not include the city. For example: search "Angels" instead of "Los Angeles Angels".
 
+Please hit the clear button before searching for another team to ensure smooth functionality.
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
